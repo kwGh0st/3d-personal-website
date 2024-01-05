@@ -40,16 +40,17 @@ const About = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction.</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <h2 className={styles.sectionHeadText}>About me.</h2>
       </motion.div>
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] leading-[30px] max-w-3xl"
       >
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae
-        debitis distinctio dolores ut possimus totam porro maxime, maiores,
-        deleniti mollitia voluptatem nemo officia numquam consectetur
-        repudiandae praesentium consequuntur voluptas cum.
+        A passionate about IT technologies. I'm enthusiastic about crafting new
+        things and solving real-world problems. My learning journey has been
+        filled with challenges, and creative problem-solving. I'm determinated
+        to continue growing, collaborating, and exploring new horizons in the
+        world of IT.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
