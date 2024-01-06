@@ -29,11 +29,15 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
+          <img
+            src={logo}
+            alt="logo"
+            className="w-9 h-9 object-contain rounded-full"
+          />
           {/* Tekst "Karol" i informacja o roli */}
           <p className="text-white text-[18px] font-bold cursor-pointer flex">
             Karol &nbsp;
-            <span className="sm:block hidden">| Java Developer</span>
+            <span className="sm:block hidden">| Developer</span>
           </p>
         </Link>
         {/* Menu nawigacyjne w wersji desktopowej */}

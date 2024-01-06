@@ -1,20 +1,12 @@
 import {
-  mobile,
   backend,
   creator,
   web,
-  javascript,
-  typescript,
+  java,
   html,
   css,
   reactjs,
-  redux,
-  tailwind,
-  nodejs,
-  mongodb,
   git,
-  figma,
-  docker,
   meta,
   starbucks,
   tesla,
@@ -22,7 +14,15 @@ import {
   carrent,
   jobit,
   tripguide,
-  threejs,
+  spring,
+  maven,
+  sql,
+  hibernate,
+  postman,
+  linux,
+  windows,
+  idea,
+  javascript,
 } from "../assets";
 
 export const navLinks = [
@@ -46,10 +46,6 @@ const services = [
     icon: web,
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
-  },
-  {
     title: "Backend Developer",
     icon: backend,
   },
@@ -61,6 +57,26 @@ const services = [
 
 const technologies = [
   {
+    name: "Java",
+    icon: java,
+  },
+  {
+    name: "Spring",
+    icon: spring,
+  },
+  {
+    name: "Maven",
+    icon: maven,
+  },
+  {
+    name: "SQL",
+    icon: sql,
+  },
+  {
+    name: "Hibernate",
+    icon: hibernate,
+  },
+  {
     name: "HTML 5",
     icon: html,
   },
@@ -68,49 +84,34 @@ const technologies = [
     name: "CSS 3",
     icon: css,
   },
+
+  {
+    name: "Postman",
+    icon: postman,
+  },
+  {
+    name: "Linux",
+    icon: linux,
+  },
+  {
+    name: "Windows",
+    icon: windows,
+  },
+  {
+    name: "GIT",
+    icon: git,
+  },
+  {
+    name: "Intelij Idea",
+    icon: idea,
+  },
   {
     name: "JavaScript",
     icon: javascript,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
-    name: "React JS",
+    name: "React",
     icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
   },
 ];
 
