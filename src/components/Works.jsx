@@ -94,7 +94,7 @@ const Works = () => {
 
       <div className="w-full flex">
         <motion.p
-          variants={fadeIn(", ", 0.1, 1)}
+          variants={fadeIn(", ", 0.1, 0.75)}
           className="mt-3 text-secondary text-[17px] max-w-3x1 leading-[30px]"
         >
           I believe that practice is the best way to learn programming. My

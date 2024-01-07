@@ -9,6 +9,10 @@ import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
 const Contact = () => {
+  const userId = import.meta.env.VITE_REACT_APP_EMAILJS_USER_ID;
+  const userService = import.meta.env.VITE_REACT_APP_EMAILJS_SERVICE_ID;
+  const userTemplate = import.meta.env.VITE_REACT_APP_EMAILJS_TEMPLATE_ID;
+
   const formRef = useRef();
   const [form, setForm] = useState({
     name: "",
@@ -29,8 +33,8 @@ const Contact = () => {
 
     emailjs
       .send(
-        "",
-        "",
+        userService,
+        userTemplate,
         {
           from_name: form.name,
           to_name: "Karol",
@@ -38,7 +42,7 @@ const Contact = () => {
           to_email: "",
           message: form.message,
         },
-        ""
+        userId
       )
       .then(
         () => {
@@ -84,7 +88,7 @@ const Contact = () => {
               name="name"
               value={form.name}
               onChange={handleChange}
-              placeholder="What's your good name?"
+              placeholder="What's your name?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>

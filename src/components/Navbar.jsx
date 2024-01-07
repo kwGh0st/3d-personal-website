@@ -5,13 +5,7 @@ import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
 
-/**
- * Komponent Navbar
- *
- * Odpowiada za nawigację w aplikacji.
- */
 const Navbar = () => {
-  // Stan aktywnego linku i stan otwarcia/zamknięcia menu mobilnego
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
 
@@ -20,7 +14,6 @@ const Navbar = () => {
       className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}
     >
       <div className="w-full flex justify-between items-center max-w-7x1 mx-auto">
-        {/* Logo z linkiem do strony głównej */}
         <Link
           to="/"
           className="flex items-center gap-2"
@@ -34,13 +27,12 @@ const Navbar = () => {
             alt="logo"
             className="w-9 h-9 object-contain rounded-full"
           />
-          {/* Tekst "Karol" i informacja o roli */}
+
           <p className="text-white text-[18px] font-bold cursor-pointer flex">
-            Karol &nbsp;
-            <span className="sm:block hidden">| Wojtacha</span>
+            Karol&nbsp;
+            <span className="md:block hidden">|&nbsp;Creator & Developer</span>
           </p>
         </Link>
-        {/* Menu nawigacyjne w wersji desktopowej */}
         <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((link) => (
             <li
@@ -54,7 +46,7 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        {/* Menu nawigacyjne w wersji mobilnej */}
+
         <div className="sm:hidden flex flex-1 justify-end items-center">
           <img
             src={toggle ? close : menu}
@@ -62,7 +54,7 @@ const Navbar = () => {
             className="w-[28px] h-[28px] object-contain cursor-pointer"
             onClick={() => setToggle(!toggle)}
           />
-          {/* Widoczne tylko po kliknięciu ikony menu w wersji mobilnej */}
+
           <div
             className={`${
               !toggle ? "hidden" : "flex"
