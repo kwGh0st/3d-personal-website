@@ -3,6 +3,6 @@ import react from "@vitejs/plugin-react";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/kwGh0st/",
+  base: "/3d-personal-website/",
   plugins: [react()],
 });
