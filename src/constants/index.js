@@ -292,7 +292,7 @@ const projects = [
       },
     ],
     image: personalweb,
-    source_code_link: "#",
+    source_code_link: "https://github.com/kwGh0st/wojtachakarol/tree/master",
     demo_video: personalwebdemo,
   },
 ];
