@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 
@@ -15,9 +15,16 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  demo_video,
 }) => {
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div
+      variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
       <Tilt
         options={{
           max: 45,
@@ -27,6 +34,16 @@ const ProjectCard = ({
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
       >
         <div className="relative w-full h-[230px]">
+          {isHovered && (
+            <video
+              src={demo_video}
+              alt="demo video"
+              className="absolute inset-0 w-full h-full object-cover object-center rounded-2xl"
+              autoPlay
+              loop
+              muted
+            />
+          )}
           <img
             src={image}
             alt="project_image"
@@ -80,10 +97,14 @@ const Works = () => {
           variants={fadeIn(", ", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3x1 leading-[30px]"
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dicta,
-          repellendus ullam doloribus exercitationem iure laudantium accusamus
-          voluptatibus vero perspiciatis veniam vitae suscipit similique dolorum
-          labore animi eligendi deserunt rem?
+          I believe that practice is the best way to learn programming. My
+          projects are not only a means to develop my skills but also a platform
+          to share them with others. They range from simple calculators to
+          complex web applications, encompassing games and desktop applications
+          along the way. I constantly seek new challenges and share my projects
+          on GitHub, inviting everyone to explore them and learn more about my
+          programming journey. For beginner programmers, I hope my projects
+          serve as a valuable resource in your learning process.
         </motion.p>
       </div>
 

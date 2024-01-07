@@ -25,6 +25,9 @@ import {
   javascript,
 } from "../assets";
 
+import fire from "../assets/company/fire.png";
+import learn from "../assets/company/learn.png";
+
 export const navLinks = [
   {
     id: "about",
@@ -117,55 +120,31 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Senior Rescuer",
+    company_name: "State Fire Service of Poland",
+    icon: fire,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "August 2020 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Direct involvement in rescue operations.",
+      "Configuration and maintenance of the company's computer network.",
+      "Troubleshooting hardware and network issues.",
+      "Conducting safety and first aid training sessions for children and youth.",
+      "Developing teamwork skills and the ability to work under pressure as a firefighter.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "Commencement of learning",
+    company_name: "",
+    icon: learn,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "June  2021 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Self-study of Java programming fundamentals and more advanced concepts.",
+      "Completion of online courses.",
+      "Design and implementation of initial applications in Java and JavaScript.",
+      "Initiation of self-directed creation of more advanced applications to further develop my technical skills.",
+      "Development of problem-solving skills through the creation of real-world projects.",
     ],
   },
 ];
@@ -218,6 +197,7 @@ const projects = [
     ],
     image: carrent,
     source_code_link: "https://github.com/",
+    demo_video: "src\\assets\\demo\\calculator.webm",
   },
   {
     name: "Job IT",
@@ -239,6 +219,7 @@ const projects = [
     ],
     image: jobit,
     source_code_link: "https://github.com/",
+    demo_video: "src\\assets\\demo\\email-client.webm",
   },
   {
     name: "Trip Guide",
@@ -260,6 +241,7 @@ const projects = [
     ],
     image: tripguide,
     source_code_link: "https://github.com/",
+    demo_video: "src\\assets\\demo\\file-archiver.webm",
   },
 ];
 

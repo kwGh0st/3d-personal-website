@@ -24,7 +24,7 @@ const Hero = () => {
           </p>
         </div>
         <div className="flex flex-row justify-end items-center w-full">
-          <div className="w-3/4">
+          <div className="w-full">
             <BackgroundAnimation />
           </div>
         </div>
