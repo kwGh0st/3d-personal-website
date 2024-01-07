@@ -37,7 +37,7 @@ const Navbar = () => {
           {/* Tekst "Karol" i informacja o roli */}
           <p className="text-white text-[18px] font-bold cursor-pointer flex">
             Karol &nbsp;
-            <span className="sm:block hidden">| Developer</span>
+            <span className="sm:block hidden">| Wojtacha</span>
           </p>
         </Link>
         {/* Menu nawigacyjne w wersji desktopowej */}

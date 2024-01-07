@@ -7,13 +7,6 @@ import {
   css,
   reactjs,
   git,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
   spring,
   maven,
   sql,
@@ -24,6 +17,15 @@ import {
   idea,
   javascript,
 } from "../assets";
+
+import {
+  filearchiver,
+  mail,
+  pong,
+  snake,
+  todolist,
+  personalweb,
+} from "../assets/projects";
 
 import fire from "../assets/company/fire.png";
 import learn from "../assets/company/learn.png";
@@ -40,6 +42,10 @@ export const navLinks = [
   {
     id: "contact",
     title: "Contact",
+  },
+  {
+    id: "projects",
+    title: "Projects",
   },
 ];
 
@@ -149,99 +155,136 @@ const experiences = [
   },
 ];
 
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
-];
+const testimonials = [];
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Snake Game",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Snake Game in Java is a classic game where the player controls a snake, attempting to collect as many apples as possible while avoiding collisions with its own body and the boundaries of the board.",
     tags: [
       {
-        name: "react",
+        name: "java",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "swing",
         color: "green-text-gradient",
       },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-    demo_video: "src\\assets\\demo\\calculator.webm",
+    image: snake,
+    source_code_link: "https://github.com/kwGh0st/java-snake-game",
+    demo_video: "src/assets/demo/snake.webm",
   },
   {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+    name: "File Archiver",
+    description: "A program that performs operations on .zip files.",
     tags: [
       {
-        name: "react",
+        name: "java",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "javafx",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "gradle",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-    demo_video: "src\\assets\\demo\\email-client.webm",
+
+    image: filearchiver,
+    source_code_link: "https://github.com/kwGh0st/java-email-client",
+    demo_video: "src/assets/demo/file-archiver.webm",
   },
   {
-    name: "Trip Guide",
+    name: "Pong Game",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "In this two-player game, each player controls a paddle to bounce a ball back and forth. The game supports two players, allowing them to compete head-to-head on a single screen.",
     tags: [
       {
-        name: "nextjs",
+        name: "java",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "swing",
+        color: "green-text-gradient",
+      },
+    ],
+    image: pong,
+    source_code_link: "https://github.com/kwGh0st/java-pong-game",
+    demo_video: "src/assets/demo/pong.webm",
+  },
+  {
+    name: "Email Client",
+    description:
+      "Email Client - an email application that features a complete user interface developed using the JavaFX library and the SceneBuilder application. ",
+    tags: [
+      {
+        name: "java",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "javafx",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "gradle",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
-    demo_video: "src\\assets\\demo\\file-archiver.webm",
+    image: mail,
+    source_code_link: "https://github.com/kwGh0st/java-email-client",
+    demo_video: "src/assets/demo/email-client.webm",
+  },
+  {
+    name: "Todo App",
+    description:
+      "A web application built using the Spring framework. After logging in, users can browse, create, edit, and delete tasks.",
+    tags: [
+      {
+        name: "java",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "spring",
+        color: "green-text-gradient",
+      },
+      {
+        name: "hibernate",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "sql",
+        color: "",
+      },
+    ],
+    image: todolist,
+    source_code_link:
+      "https://github.com/kwGh0st/springframework/tree/master/TodoApp",
+    demo_video: "src/assets/demo/todo.webm",
+  },
+  {
+    name: "This Website",
+    description: "My personal website.",
+    tags: [
+      {
+        name: "javascript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "react",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: personalweb,
+    source_code_link: "#",
+    demo_video: "src/assets/demo/personal-website.webm",
   },
 ];
 

@@ -24,7 +24,7 @@ const Tech = () => {
               key={technology.name}
             >
               <BallCanvas icon={technology.icon} />
-              <p>{technology.name}</p>
+              <p className="font-bold">{technology.name}</p>
             </div>
           ))}
         </div>
