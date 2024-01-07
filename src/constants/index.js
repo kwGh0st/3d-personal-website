@@ -27,6 +27,15 @@ import {
   personalweb,
 } from "../assets/projects";
 
+import {
+  emaildemo,
+  archiverdemo,
+  personalwebdemo,
+  pongdemo,
+  snakedemo,
+  tododemo,
+} from "../assets/demo";
+
 import fire from "../assets/company/fire.png";
 import learn from "../assets/company/learn.png";
 
@@ -174,7 +183,7 @@ const projects = [
     ],
     image: snake,
     source_code_link: "https://github.com/kwGh0st/java-snake-game",
-    demo_video: "src/assets/demo/snake.webm",
+    demo_video: snakedemo,
   },
   {
     name: "File Archiver",
@@ -196,7 +205,7 @@ const projects = [
 
     image: filearchiver,
     source_code_link: "https://github.com/kwGh0st/java-email-client",
-    demo_video: "src/assets/demo/file-archiver.webm",
+    demo_video: archiverdemo,
   },
   {
     name: "Pong Game",
@@ -214,7 +223,7 @@ const projects = [
     ],
     image: pong,
     source_code_link: "https://github.com/kwGh0st/java-pong-game",
-    demo_video: "src/assets/demo/pong.webm",
+    demo_video: pongdemo,
   },
   {
     name: "Email Client",
@@ -236,7 +245,7 @@ const projects = [
     ],
     image: mail,
     source_code_link: "https://github.com/kwGh0st/java-email-client",
-    demo_video: "src/assets/demo/email-client.webm",
+    demo_video: emaildemo,
   },
   {
     name: "Todo App",
@@ -263,7 +272,7 @@ const projects = [
     image: todolist,
     source_code_link:
       "https://github.com/kwGh0st/springframework/tree/master/TodoApp",
-    demo_video: "src/assets/demo/todo.webm",
+    demo_video: tododemo,
   },
   {
     name: "This Website",
@@ -284,7 +293,7 @@ const projects = [
     ],
     image: personalweb,
     source_code_link: "#",
-    demo_video: "src/assets/demo/personal-website.webm",
+    demo_video: personalwebdemo,
   },
 ];
 
