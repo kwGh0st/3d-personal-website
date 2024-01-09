@@ -18,23 +18,9 @@ import {
   javascript,
 } from "../assets";
 
-import {
-  filearchiver,
-  mail,
-  pong,
-  snake,
-  todolist,
-  personalweb,
-} from "../assets/projects";
+import { todolist, personalweb } from "../assets/projects";
 
-import {
-  emaildemo,
-  archiverdemo,
-  personalwebdemo,
-  pongdemo,
-  snakedemo,
-  tododemo,
-} from "../assets/demo";
+import { personalwebdemo, tododemo } from "../assets/demo";
 
 import fire from "../assets/company/fire.png";
 import learn from "../assets/company/learn.png";
@@ -167,86 +153,6 @@ const experiences = [
 const testimonials = [];
 
 const projects = [
-  {
-    name: "Snake Game",
-    description:
-      "Snake Game in Java is a classic game where the player controls a snake, attempting to collect as many apples as possible while avoiding collisions with its own body and the boundaries of the board.",
-    tags: [
-      {
-        name: "java",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "swing",
-        color: "green-text-gradient",
-      },
-    ],
-    image: snake,
-    source_code_link: "https://github.com/kwGh0st/java-snake-game",
-    demo_video: snakedemo,
-  },
-  {
-    name: "File Archiver",
-    description: "A program that performs operations on .zip files.",
-    tags: [
-      {
-        name: "java",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "javafx",
-        color: "green-text-gradient",
-      },
-      {
-        name: "gradle",
-        color: "pink-text-gradient",
-      },
-    ],
-
-    image: filearchiver,
-    source_code_link: "https://github.com/kwGh0st/java-email-client",
-    demo_video: archiverdemo,
-  },
-  {
-    name: "Pong Game",
-    description:
-      "In this two-player game, each player controls a paddle to bounce a ball back and forth. The game supports two players, allowing them to compete head-to-head on a single screen.",
-    tags: [
-      {
-        name: "java",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "swing",
-        color: "green-text-gradient",
-      },
-    ],
-    image: pong,
-    source_code_link: "https://github.com/kwGh0st/java-pong-game",
-    demo_video: pongdemo,
-  },
-  {
-    name: "Email Client",
-    description:
-      "Email Client - an email application that features a complete user interface developed using the JavaFX library and the SceneBuilder application. ",
-    tags: [
-      {
-        name: "java",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "javafx",
-        color: "green-text-gradient",
-      },
-      {
-        name: "gradle",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: mail,
-    source_code_link: "https://github.com/kwGh0st/java-email-client",
-    demo_video: emaildemo,
-  },
   {
     name: "Todo App",
     description:
