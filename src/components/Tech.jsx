@@ -17,14 +17,18 @@ const Tech = () => {
         <h2 className={styles.sectionHeadText}>My skills.</h2>
       </motion.div>
       <motion.div variants={slideIn("left", "tween", 0.2, 1)}>
-        <div className="flex flex-row flex-wrap justify-start gap-10">
+        <div className="flex flex-row flex-wrap justify-start gap-10 mt-5">
           {technologies.map((technology) => (
             <div
               className="w-28 h-28 flex flex-col justify-center items-center"
               key={technology.name}
             >
-              <BallCanvas icon={technology.icon} />
-              <p className="font-bold">{technology.name}</p>
+              <img
+                src={technology.icon}
+                alt={technology.name}
+                className="w-25 h-20"
+              />
+              <p className="mt-2">{technology.name}</p>
             </div>
           ))}
         </div>

@@ -18,10 +18,7 @@ import {
   javascript,
 } from "../assets";
 
-import { todolist, personalweb } from "../assets/projects";
-
-import { personalwebdemo, tododemo } from "../assets/demo";
-
+import { todolist } from "../assets/projects";
 import fire from "../assets/company/fire.png";
 import learn from "../assets/company/learn.png";
 
@@ -35,12 +32,12 @@ export const navLinks = [
     title: "Work",
   },
   {
-    id: "contact",
-    title: "Contact",
-  },
-  {
     id: "projects",
     title: "Projects",
+  },
+  {
+    id: "contact",
+    title: "Contact",
   },
 ];
 
@@ -69,8 +66,12 @@ const technologies = [
     icon: spring,
   },
   {
-    name: "Maven",
-    icon: maven,
+    name: "JavaScript",
+    icon: javascript,
+  },
+  {
+    name: "React",
+    icon: reactjs,
   },
   {
     name: "SQL",
@@ -88,7 +89,18 @@ const technologies = [
     name: "CSS 3",
     icon: css,
   },
-
+  {
+    name: "GIT",
+    icon: git,
+  },
+  {
+    name: "Intelij Idea",
+    icon: idea,
+  },
+  {
+    name: "Maven",
+    icon: maven,
+  },
   {
     name: "Postman",
     icon: postman,
@@ -100,22 +112,6 @@ const technologies = [
   {
     name: "Windows",
     icon: windows,
-  },
-  {
-    name: "GIT",
-    icon: git,
-  },
-  {
-    name: "Intelij Idea",
-    icon: idea,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "React",
-    icon: reactjs,
   },
 ];
 
@@ -154,20 +150,16 @@ const testimonials = [];
 
 const projects = [
   {
-    name: "Todo App",
+    name: "Users/Tasks Mangement",
     description:
-      "A web application built using the Spring framework. After logging in, users can browse, create, edit, and delete tasks.",
+      "A full-stack web application. The platform features secure user authentication with JWT, role-based access control, and email verification to ensure a seamless and secure experience. Built with Spring Boot for the backend and React for the frontend.",
     tags: [
-      {
-        name: "java",
-        color: "blue-text-gradient",
-      },
       {
         name: "spring",
         color: "green-text-gradient",
       },
       {
-        name: "hibernate",
+        name: "react",
         color: "pink-text-gradient",
       },
       {
@@ -176,30 +168,8 @@ const projects = [
       },
     ],
     image: todolist,
-    source_code_link:
-      "https://github.com/kwGh0st/springframework/tree/master/TodoApp",
-    demo_video: tododemo,
-  },
-  {
-    name: "This Website",
-    description: "My personal website.",
-    tags: [
-      {
-        name: "javascript",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "react",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwindcss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: personalweb,
-    source_code_link: "https://github.com/kwGh0st/wojtachakarol/tree/master",
-    demo_video: personalwebdemo,
+    source_code_link: "https://github.com/kwGh0st/task-app-client",
+    web_link: "https://usersandtodos.netlify.app",
   },
 ];
 

@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { github } from "../assets";
+import { github, web } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -15,16 +15,10 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
-  demo_video,
+  web_link,
 }) => {
-  const [isHovered, setIsHovered] = useState(false);
-
   return (
-    <motion.div
-      variants={fadeIn("up", "spring", index * 0.5, 0.75)}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-    >
+    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
         options={{
           max: 45,
@@ -34,23 +28,13 @@ const ProjectCard = ({
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
       >
         <div className="relative w-full h-[230px]">
-          {isHovered && (
-            <video
-              src={demo_video}
-              alt="demo video"
-              className="absolute inset-0 w-full h-full object-cover object-center rounded-2xl"
-              autoPlay
-              loop
-              muted
-            />
-          )}
           <img
             src={image}
             alt="project_image"
             className="w-full h-full object-cover rounded-2xl"
           />
 
-          <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
+          <div className="absolute inset-0 flex flex-col justify-start items-end gap-2 m-3 card-img_hover">
             <div
               onClick={() => window.open(source_code_link, "_blank")}
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
@@ -58,6 +42,16 @@ const ProjectCard = ({
               <img
                 src={github}
                 alt="source code"
+                className="w-1/2 h-1/2 object-contain"
+              />
+            </div>
+            <div
+              onClick={() => window.open(web_link, "_blank")}
+              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+            >
+              <img
+                src={web}
+                alt="web preview"
                 className="w-1/2 h-1/2 object-contain"
               />
             </div>

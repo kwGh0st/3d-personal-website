@@ -1,7 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion";
 import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
 import BackgroundAnimation from "./canvas/BackgroundAnimation";
 
 const Hero = () => {
@@ -23,8 +21,8 @@ const Hero = () => {
             desktop and web applications.
           </p>
         </div>
-        <div className="flex flex-row justify-end items-center w-full">
-          <div className="w-full">
+        <div className="flex flex-col justify-end items-center w-full">
+          <div className="w-full sm:w-3/4 md:3/4">
             <BackgroundAnimation />
           </div>
         </div>
