@@ -18,7 +18,7 @@ import {
   javascript,
 } from "../assets";
 
-import { todolist } from "../assets/projects";
+import { todolist, dwlf } from "../assets/projects";
 import fire from "../assets/company/fire.png";
 import learn from "../assets/company/learn.png";
 
@@ -170,6 +170,24 @@ const projects = [
     image: todolist,
     source_code_link: "https://github.com/kwGh0st/task-app-client",
     web_link: "https://usersandtodos.netlify.app",
+  },
+  {
+    name: "Landscaping Company Website",
+    description:
+      "Website for landscaping company created using React and tailwind css.",
+    tags: [
+      {
+        name: "react",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "green-text-gradient",
+      },
+    ],
+    image: dwlf,
+    source_code_link: "https://github.com/kwGh0st/landscaping-and-fencing",
+    web_link: "https://dw-landscaping-fencing.netlify.app",
   },
 ];
 
